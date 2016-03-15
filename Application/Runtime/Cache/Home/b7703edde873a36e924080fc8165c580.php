@@ -1,0 +1,75 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>微项目</title>
+
+<link rel="stylesheet" href="/php/practice/myproject/Public/styles/atheme.css" />
+<script type="text/javascript">
+  function searchsub(){
+        if($("#search").val() == "" || $("#search").val().charCodeAt() == "32"){return false;}
+      }
+</script>
+<link rel="stylesheet" href="/php/practice/myproject/Public/styles/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/php/practice/myproject/Public/styles/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/php/practice/myproject/Public/js/jquery.min.js"></script>
+<script src="/php/practice/myproject/Public/js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body onload='searchsub()'>
+<div data-role="page" id="s1">
+  <div data-role="header" data-position="fixed">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-carat-l"></a>
+    <h1>微项目</h1>
+  </div>
+  <div data-role="content" style="margin:-10px" data-theme="d">
+     <div class='contentbody'> 
+    <form method="post" action="/php/practice/myproject/index.php/Home/Searchhot/records" enctype="multipart/form-data" onsubmit="return searchsub()" >
+      <input id='search' type="search" name="search" id="search-1" />
+      <span id='return' style='width:100%;'></span>
+    
+    <select name="provinceid[]" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+      <option id='prodata'>选择省份</option>
+      <?php foreach($prodata as $v): $pid = explode(',',$v['proid']); $proname = explode(',',$v['proname']); $newarray = array_combine($pid,$proname); ?>
+      <optgroup label="<?php echo $v['optgroup'];?>">
+      <?php foreach ($newarray as $key=>$value):?>
+      <option value="<?php echo $key;?>"><?php echo $value;?></option>
+      <?php endforeach;?>
+      </optgroup>
+      <?php endforeach;?>
+    </select>
+    <div style="width:100%;text-align:center"><input type="submit" data-theme="c" value='开始搜索' />
+    </div> 
+    </div> 
+    </form>
+    <div class="ui-body ui-body-a ui-corner-all">
+      <h4 id='prodata'>最近搜索</h4>
+       <?php
+ foreach($search_array as $key=>$value){ if(is_array($value)){ ?>
+        <button  data-role="none" pro='<?php echo $value[2];?>'><?php echo $value[0];?></button> 
+       <?php  }} ?>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="b">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="/php/practice/myproject/index.php/Home/Index/index" class="ui-icon-info ui-btn-icon-top">推荐</a></li>
+        <li><a href="/php/practice/myproject/index.php/Home/Searchhot/search" class="ui-icon-search ui-btn-icon-top ui-btn-active">搜索</a></li>
+        <li><a href="/php/practice/myproject/index.php/Home/Favorites/my" class="ui-icon-heart ui-btn-icon-top">我的...</a></li>
+        <li><a href="about.php" class="ui-icon-user ui-btn-icon-top">关于</a></li>
+      </ul>
+    </div>
+    <h4 data-theme="a" style="background:#232323; width:110%; margin-left:-20px; margin-bottom:-1px;">联系电话：400-1010-110</h4>
+  </div>
+</div>
+<script type="text/javascript">
+  $('button[data-role=none]').click(function(){
+    var search = $(this).text();
+    var pro = $(this).attr('pro');
+    location.href='/php/practice/myproject/index.php/Home/Searchhot/ajax_records/search/'+search+'/pro/'+pro;
+    });
+</script>
+</body>
+</html>

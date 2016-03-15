@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心 - 修改</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> 添加 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form method="post" action="__SELF__"enctype="multipart/form-data" >
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <input type="hidden" name=userid value="<?php echo $data['userid']?>">            <tr>
+                <td>用户名</td>
+                <td>            <input type='text' name='username' maxlength='60' value="<?php echo $data['username'];?>" />
+                </td></tr>            <tr>
+                <td>公钥</td>
+                <td>            <input type='text' name='openid' maxlength='60' value="<?php echo $data['openid'];?>" />
+                </td></tr>            <tr>
+                <td>注册时间</td>
+                <td>            <input type='text' name='createdatetime' maxlength='60' value="<?php echo $data['createdatetime'];?>" />
+                </td></tr>            <tr>
+                <td>真实姓名</td>
+                <td>            <input type='text' name='realname' maxlength='60' value="<?php echo $data['realname'];?>" />
+                </td></tr>            <tr>
+                <td>性别</td>
+                <td>            <input <?php if($data['gender'] == '男'){ echo "checked = 'checked'";}?> type='radio' name='gender[]' value='1'>男</input>
+                            <input <?php if($data['gender'] == '女'){ echo "checked = 'checked'";}?> type='radio' name='gender[]' value='2'>女</input>
+                            <input <?php if($data['gender'] == '保密'){ echo "checked = 'checked'";}?> type='radio' name='gender[]' value='3'>保密</input>
+                            <tr>
+                <td>电话</td>
+                <td>            <input type='text' name='cellphone' maxlength='60' value="<?php echo $data['cellphone'];?>" />
+                </td></tr>            <tr>
+                <td>单位</td>
+                <td>            <input type='text' name='units' maxlength='60' value="<?php echo $data['units'];?>" />
+                </td></tr>            <tr>
+                <td>其他联系方式</td>
+                <td>            <input type='text' name='othercontact' maxlength='60' value="<?php echo $data['othercontact'];?>" />
+                </td></tr>            
+                <tr>
+                    <td>省份</td>
+                    <td>
+                        <select name="provinceid">
+                        <option value='0'><--请选择所在地--></option>
+                        <?php foreach ($pdata as $v):?>
+                            <option value='<?php echo $v["provinceid"];?>'><?php echo $v["provincename"];?></option>
+                        <?php endforeach;?>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <td>修改时间</td>
+                <td>            <input type='text' name='favoritenum' maxlength='60' value="<?php echo $data['modifytime'];?>" />
+                </td>
+                </tr>
+
+                <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

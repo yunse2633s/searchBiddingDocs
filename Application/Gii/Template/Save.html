@@ -1,0 +1,60 @@
+<!-- $Id: brand_info.htm 14216 2008-03-10 02:27:21Z testyang $ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心 - 修改</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> 添加 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form method="post" action="__SELF__"enctype="multipart/form-data" >
+        <table cellspacing="1" cellpadding="3" width="100%">
+            <!--循环表单中有几个字段，生成相应字段的表单-->
+            <?php foreach($files as $k=>$v):
+                if($v['key']=='PRI'){
+                        echo '<input type="hidden" name='.$v['field'].' value="<?php echo $data[\''.$v['field'].'\']?>">';
+                        continue; 
+                    }
+            ?>
+            <tr>
+                <td><?php echo $v['comment'];?></td>
+                <td><?php 
+                    //enum
+                        if(strpos($v['type'],'enum') === 0){
+                        $value = str_replace('enum(\'','',$v['type']);
+                        $value = str_replace('\')','',$value);
+                        $value = explode('\',\'',$value); 
+                        foreach($value as $k2=>$v2){
+                    ?>
+            <input <?php echo '<?php if($data[\''.$v['field'].'\'] == \''.$v2.'\'){ echo "checked = \'checked\'";}?>';?> type='radio' name='<?php echo $v["field"];?>' value='<?php echo $k2+1;?>'><?php echo $v2;?></input>
+                <?php }}else if(strpos($v['type'],'set') === 0){
+                    //set
+                    if(preg_match_all('/\'(.*?)\'/', $v['type'], $matches)){
+                    foreach($matches[1] as $k3=>$v3){
+                    if($k3 == 0){ $key = 1; }else{ $key = 2<<($key-1);}
+                ?>
+                <input <?php echo '<?php if(strpos($data["sets"],\''.$v3.'\')!==FALSE){ echo \'checked = "checked"\';}?>';?> type='checkbox' name='<?php echo $v["field"];?>[]' value='<?php echo $key;?>'><?php echo $v3;?></input>
+                <?php }}}else { ?>
+            <input type='text' name='<?php echo $v["field"];?>' maxlength='60' value="<?php echo '<?php echo $data[\''.$v['field'].'\'];?>';?>" />
+                </td></tr><?php }endforeach;?>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" class="button" value=" 确定 " />
+                    <input type="reset" class="button" value=" 重置 " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div id="footer">
+</div>
+</body>
+</html>

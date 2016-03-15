@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>微项目</title>
+<link rel="stylesheet" href="__PUBLIC__/styles/atheme.css" />
+<link rel="stylesheet" href="__PUBLIC__/styles/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="__PUBLIC__/styles/jquery.mobile.structure-1.4.5.min.css" />
+<script src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="__PUBLIC__/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page"> 
+  <div data-role="header" data-position="fixed">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-icon-notext ui-icon-carat-l"></a>
+    <h1>微项目</h1>
+  </div>
+  <div data-role="content" style="margin:-10px;width:100%;text-align:center">
+招标名称
+地区
+业主名称
+业主联系人\联系电话
+招标代理机构名称
+机构联系人\电话
+
+开标时间
+
+发布时间
+招标中标变更预审
+    <ul data-role="listview" style="margin:0px">
+      <li>     
+        <h2 style="margin-top:-0.5em; font-size:0.95em;">{$info_data['title']}</h2>
+        <p style="font-size:0.9em">{$info_data['content']}</p>
+      </li>
+      <li>     
+        <h2 style="margin-top:-0.5em; font-size:0.95em;">业主名称|业主联系人|联系电话</h2>
+        <p style="font-size:0.9em">{$info_data['ownerunit']}|{$info_data['ownercontacts']}|{$info_data['ownerphone']}</p>
+      </li>
+      <li>     
+        <h2 style="margin-top:-0.5em; font-size:0.95em;">代理机构|机构联系人|联系电话</h2>
+        <p style="font-size:0.9em">{$info_data['biddingunit']}|{$info_data['biddingcontacts']}|{$info_data['biddingphone']}</p>
+      </li>
+      <li>     
+        <h2 style="margin-top:-0.5em; font-size:0.95em;">开标时间|发布时间|招标中标变更预审</h2>
+        <p style="font-size:0.9em">{$info_data['putDatetime']}|{$info_data['biddingdatetime']}|{$info_data['biddingstatusid']}</p>
+      </li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-theme="b">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="__APP__/Home/Index/index" class="ui-icon-info ui-btn-icon-top">推荐</a></li>
+        <li><a href="__APP__/Home/Searchhot/search" class="ui-icon-search ui-btn-icon-top">搜索</a></li>
+        <li><a href="__APP__/Home/Favorites/my" class="ui-icon-heart ui-btn-icon-top">我的...</a></li>
+        <li><a href="about.php" class="ui-icon-user ui-btn-icon-top">关于</a></li>
+      </ul>
+    </div>
+    <h4 data-theme="a" style="background:#232323; width:110%; margin-left:-20px; margin-bottom:-1px;">联系电话：400-1010-110</h4>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心 - 添加</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Styles/general.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/Styles/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/datetime.js"></script>
+</head>
+<body>
+<h1>
+    <span class="action-span1"><a href="#">ECSHOP 管理中心</a></span>
+    <span id="search_id" class="action-span1"> 添加 </span>
+    <div style="clear:both"></div>
+</h1>
+<div class="main-div">
+    <form method="post" action="__SELF__"enctype="multipart/form-data" >
+        <table cellspacing="1" cellpadding="3" width="100%">
+        <tr><td>省份id</td>
+            <td>
+                <select class='province' name="provinceid">
+                        <option value='0'>--请选择所在地--</option>
+                        <?php foreach ($prodata as $v):?>
+                            <option value='<?php echo $v["provinceid"];?>'><?php echo $v["provincename"];?></option>
+                        <?php endforeach;?>
+                </select>
+            </td>
+        </tr>
+        <tr><td>用户id</td>
+            <td>
+                <input type='hidden' name='userid' value='<?php echo $usedata['userid'];?>' /><?php echo $usedata['username'];?>
+            </td>
+        </tr>
+        <tr><td>截止时间</td>
+            <td>
+                <input class='date_plug' type='date' name='endtime' maxlength='60' />
+            </td>
+        </tr>
+        <tr><td>开通状态</td>
+            <td>
+            <input type='radio' name='status' value='1' checked="checked">是</input>
+            <input type='radio' name='status' value='2'>否</input>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" class="button" value=" 确定 " /><input type="reset" class="button" value=" 重置 " />
+            </td>
+        </tr>
+        </table>
+    </form>
+</div>
+
+<div id="footer">
+</div>
+</body>
+<script type="text/javascript">
+$('.date_plug').click(function(e){
+    var xx =e.pageX;
+    var yy =e.pageY;
+    $('.date_plug').Date_time({                        
+        Event : "click",                    
+        Left : xx,
+        Top : yy,
+        fuhao : "-",
+        isTime : false,
+        beginY : 2015,
+        endY :2020
+    });
+});
+</script> 
+</html>

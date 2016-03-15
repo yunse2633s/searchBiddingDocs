@@ -1,0 +1,608 @@
+[ 2015-05-07T18:05:51+08:00 ] 127.0.0.1 /practice/myproject/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0051s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0008s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( infoid in (2,12,275,297) )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003428s ]
+
+[ 2015-05-07T18:10:58+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0384s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2015-05-07T18:10:59+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0245s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( infoid in (2,12,275,297) )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001866s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003222s ]
+
+[ 2015-05-07T18:11:00+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003735s ]
+
+[ 2015-05-07T18:11:01+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/i/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+
+[ 2015-05-07T18:11:01+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/about.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+ERR: 非法操作:about.php
+
+[ 2015-05-07T18:11:06+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003722s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0060s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2015-05-07T18:11:07+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001709s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0050s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0017s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( infoid in (2,12,275,297) )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001812s ]
+
+[ 2015-05-07T18:11:08+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000806s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002487s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0067s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001743s ]
+
+[ 2015-05-07T18:11:09+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2015-05-07T18:11:09+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/i/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+
+[ 2015-05-07T18:11:10+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/about.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001471s ]
+ERR: 非法操作:about.php
+
+[ 2015-05-07T18:11:11+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0071s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0011s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( infoid in (2,12,275,297) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+
+[ 2015-05-07T18:50:36+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0058s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: browse_info D:\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: browse_total D:\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2015-05-07T18:50:39+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0062s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: search D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: search_array D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2015-05-07T18:50:41+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000376s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000525s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2015-05-07T18:50:41+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Favorites/i/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-05-07T18:50:48+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0051s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: search D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: search_array D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2015-05-07T19:38:59+08:00 ] 127.0.0.1 /practice/myproject/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0050s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: browse_info D:\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: browse_total D:\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2015-05-07T19:39:08+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0089s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0037s ]
+NOTIC: [8] Undefined index: search D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: search_array D:\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2015-05-07T19:39:14+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/records
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `zr_searchhot` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `zr_searchhot` WHERE ( search_hot='股市' )  [ RunTime:0.0012s ]
+SQL: INSERT INTO `zr_searchhot` (`search_hot`) VALUES ('股市') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0076s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` WHERE ( title like "%股市%" and is_on_sale=1 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `infoid`,`provinceid`,`title`,`content` FROM `zr_infos` WHERE ( title like "%股市%" and is_on_sale=1 ) LIMIT 0,3   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001951s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2015-05-07T19:39:18+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0081s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2015-05-07T19:39:23+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/records
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+SQL: SHOW COLUMNS FROM `zr_searchhot` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `zr_searchhot` WHERE ( search_hot='股票' )  [ RunTime:0.0008s ]
+SQL: INSERT INTO `zr_searchhot` (`search_hot`) VALUES ('股票') [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` WHERE ( title like "%股票%" and is_on_sale=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `infoid`,`provinceid`,`title`,`content` FROM `zr_infos` WHERE ( title like "%股票%" and is_on_sale=1 ) LIMIT 0,3   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002038s ]
+
+[ 2015-05-07T19:39:30+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/records
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined variable: prodata D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 35 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 35 行.
+NOTIC: [8] Undefined variable: search_array D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2015-05-07T19:40:36+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/records
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: prodata D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 35 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 35 行.
+NOTIC: [8] Undefined variable: search_array D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001484s ]
+
+[ 2015-05-07T19:40:43+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0049s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003624s ]
+
+[ 2015-05-07T19:40:47+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/ajax_records/search/%E8%82%A1%E7%A5%A8/pro/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` WHERE ( title like "%股票%" and is_on_sale=1 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `infoid`,`provinceid`,`title`,`content` FROM `zr_infos` WHERE ( title like "%股票%" and is_on_sale=1 ) LIMIT 0,3   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2015-05-07T19:40:50+08:00 ] 127.0.0.1 /practice/myproject/index.php/Home/Searchhot/ajax_similar_search/search/%E7%89%9B
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001709s ]
+SQL: SHOW COLUMNS FROM `zr_searchhot` [ RunTime:0.0040s ]
+SQL: SELECT `search_hot` FROM `zr_searchhot` WHERE ( search_hot like '%牛%' ) LIMIT 0,5   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+

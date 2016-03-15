@@ -1,0 +1,145 @@
+[ 2016-03-14T17:12:35+08:00 ] 127.0.0.1 /php/practice/myproject/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-03-14T17:13:44+08:00 ] 127.0.0.1 /php/practice/myproject/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0090s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'thumb_img' in 'field list'
+
+[ 2016-03-14T17:13:46+08:00 ] 127.0.0.1 /php/practice/myproject/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0020s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'thumb_img' in 'field list'
+
+[ 2016-03-14T17:15:38+08:00 ] 127.0.0.1 /php/practice/myproject/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0030s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: browse_info D:\work\project\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: browse_total D:\work\project\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T17:15:42+08:00 ] 127.0.0.1 /php/practice/myproject/index.php/Home/Searchhot/search
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zr_province` [ RunTime:0.0010s ]
+SQL: SELECT group_concat(provinceid) as proid,group_concat(provincename) as proname,`optgroup` FROM `zr_province` WHERE ( pid=0 ) GROUP BY optgroup  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: search D:\work\project\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: search_array D:\work\project\php\practice\myproject\Application\Home\Controller\SearchhotController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\b7703edde873a36e924080fc8165c580.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T17:15:43+08:00 ] 127.0.0.1 /php/practice/myproject/index.php/Home/Favorites/my
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T17:15:43+08:00 ] 127.0.0.1 /php/practice/myproject/index.php/Home/Favorites/i/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-14T17:15:46+08:00 ] 127.0.0.1 /php/practice/myproject/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zr_subject` [ RunTime:0.0020s ]
+SQL: SELECT `thumb_img` FROM `zr_subject`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zr_infos` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zr_infos` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `infoid`,`title`,CONCAT(substring(content,1,15),"...") as content FROM `zr_infos` WHERE ( is_hot=1 ) LIMIT 0,6   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: browse_info D:\work\project\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 23 行.
+NOTIC: [8] Undefined variable: browse_total D:\work\project\php\practice\myproject\Application\Home\Controller\IndexController.class.php 第 24 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+NOTIC: [8] Undefined variable: vol2 D:\work\project\php\practice\myproject\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
